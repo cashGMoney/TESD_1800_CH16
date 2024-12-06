@@ -33,8 +33,9 @@ public class Exercise16_21 extends Application {
         primaryStage.setScene(scene);
         primaryStage.show();
 
-        // Handle Enter key press on the text field
+        // setOnAction with Enter key
         input.setOnAction(e -> {
+            
             // Create try and catch statements for invalid Number input
             try {
                 countDownSeconds = Integer.parseInt(input.getText());
